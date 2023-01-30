@@ -1,8 +1,8 @@
 <!--侧边栏docs/_sidebar.md-->
 
-Laravel基础笔记<br>
-- [1.创建项目](/laravel/base/1.%20创建项目.md)<br>
-- [2.路由的基础知识](/laravel/base/2.%20路由的基础知识.md)<br>
-- [3.控制模块基础知识](/laravel/base/3.%20控制模块基础知识.md)<br>
-- [4.数据库操作](/laravel/base/4.%20数据库操作.md)
+河南美食<br>
+- [1.美食图片](laravel/base/1.%20美食图片.md)<br>
+- [2.美食食材](/laravel/base/2.%20美食食材.md)<br>
+- [3.美食制作](/laravel/base/3.%20美食制作.md)<br>
+- [4.美食历史](/laravel/base/4.%20美食历史.md)
 <!--以下略-->
