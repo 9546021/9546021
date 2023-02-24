@@ -4,6 +4,6 @@
 
 ![河南烩面](./img/huimian.png)
 
-- 此出为图片
+<div height="306"><img src="./img/huimian.png" alt="河南烩面" width="400" height="306" align="centre"></div>
 
 - 此出为图片
