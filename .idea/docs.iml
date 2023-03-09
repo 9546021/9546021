@@ -5,5 +5,21 @@
     <content url="file://$MODULE_DIR$" />
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="search" level="application" />
+    <orderEntry type="library" name="vue" level="application" />
+    <orderEntry type="library" name="emoji" level="application" />
+    <orderEntry type="library" name="docsify" level="application" />
+    <orderEntry type="library" name="zoom-image" level="application" />
+    <orderEntry type="library" name="docsify-pagination" level="application" />
+    <orderEntry type="library" name="index" level="application" />
+    <orderEntry type="library" name="click_heart" level="application" />
+    <orderEntry type="library" name="sweetalert" level="application" />
+    <orderEntry type="library" name="L2Dwidget" level="application" />
+    <orderEntry type="library" name="autoload" level="application" />
+    <orderEntry type="library" name="docsify-themeable" level="application" />
+    <orderEntry type="library" name="toc" level="application" />
+    <orderEntry type="library" name="buble" level="application" />
+    <orderEntry type="library" name="busuanzi.pure.mini" level="application" />
+    <orderEntry type="library" name="docsify-plugin-flexible-alerts" level="application" />
   </component>
 </module>

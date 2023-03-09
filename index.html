@@ -7,30 +7,172 @@
   <meta name="description" content="Description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="stylesheet" href="//unpkg.com/docsify/themes/buble.css">
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/dark.css"> -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/pure.css"> -->
+  <!-- <link rel="stylesheet" href="//unpkg.com/docsify/themes/dolphin.css"> -->
+  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
 </head>
 <body>
   <div id="app"></div>
   <script>
+    let auto;
     window.$docsify = {
-      name: '河南美食',//标题
-      repo: '',
-      loadSidebar:true,//增加侧边栏
-      subMaxLevel:3,//侧边栏的层级
-      loadNavbar:true,//加载导航栏
-      auto2top:false,//切换页面后是否快速跳转到顶部
-      coverpage:true,//封面
-      search: {//搜索配置
-        maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-        paths: [], // or 'auto'
-        placeholder: '输入内容检索',
-        noData: '未检索到结果',
-        depth: 1,// 搜索标题的最大层级, 1 - 6
-        hideOtherSidebarContent: false, //是否隐藏其他侧边栏内容
-      }
-    }
+      "name": '河南美食',//标题
+      "repo": '',
+      "loadSidebar":true,//增加侧边栏
+      "subMaxLevel":3,//侧边栏的层级
+      "loadNavbar":true,//加载导航栏
+      "auto2top":false,//切换页面后是否快速跳转到顶部
+      "coverpage":true,//封面
+      "coverpage2": ['/', '/zh-cn/'],
+      'flexible-alerts': {
+        style: 'flat'
+      },
+  "search": {//搜索配置
+        "maxAge": 86400000, // 过期时间，单位毫秒，默认一天
+        "paths": auto, // or '[]'
+        "placeholder": '🔍 输入内容检索',
+        "noData": '哎呀，没找到...',
+        "depth": 3,// 搜索标题的最大层级, 1 - 6
+        "hideOtherSidebarContent": false, //是否隐藏其他侧边栏内容
+        copyCode: {
+          buttonText : '复制',
+          errorText  : 'Error',
+          successText: 'OK!'
+        },
+        pagination: {
+          previousText: '上一章',
+          nextText: '下一章',
+        },
+    },
+      "plugins": [
+        /*来必力评论*/
+        function (hook, vm) {
+          // load livere
+          hook.beforeEach(function(content) {
+            var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n"
+            return content + comment;
+          });
+
+          hook.doneEach(function() {
+            (function(d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+              if (typeof LivereTower === 'function') { return; }
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+              e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+          });
+        },
+      ],
+      "plugins": [
+        /*来必力评论*/
+        function (hook, vm) {
+          // load livere
+          hook.beforeEach(function(content) {
+            var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n"
+            return content + comment;
+          });
+
+          hook.doneEach(function() {
+            (function(d, s) {
+              var j, e = d.getElementsByTagName(s)[0];
+              if (typeof LivereTower === 'function') { return; }
+              j = d.createElement(s);
+              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+              j.async = true;
+              e.parentNode.insertBefore(j, e);
+            })(document, 'script');
+          });
+        },
+      ]
+  }
   </script>
+  <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
+  <script>
+    L2Dwidget.init({
+      "model": {
+        //jsonpath控制显示那个小萝莉模型，
+        //(切换模型需要改动)
+        jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
+        "scale": 1
+      },
+      "display": {
+        "position": "right", //看板娘的表现位置
+        "width": 70,  //小萝莉的宽度
+        "height": 140, //小萝莉的高度
+        "hOffset": 35,
+        "vOffset": -20
+      },
+      "mobile": {
+        "show": true,
+        "scale": 0.5
+      },
+      "react": {
+        "opacityDefault": 0.7,
+        "opacityOnHover": 0.2
+      }
+    });
+  </script>
+  <!-- 运行时间统计
+  <script language=javascript>
+    function siteTime() {
+      window.setTimeout("siteTime()", 1000);
+      var seconds = 1000;
+      var minutes = seconds * 60;
+      var hours = minutes * 60;
+      var days = hours * 24;
+      var years = days * 365;
+      var today = new Date();
+      var todayYear = today.getFullYear();
+      var todayMonth = today.getMonth() + 1;
+      var todayDate = today.getDate();
+      var todayHour = today.getHours();
+      var todayMinute = today.getMinutes();
+      var todaySecond = today.getSeconds();
+      /* Date.UTC() -- 返回date对象距世界标准时间(UTC)1970年1月1日午夜之间的毫秒数(时间戳)
+      year - 作为date对象的年份，为4位年份值
+      month - 0-11之间的整数，做为date对象的月份
+      day - 1-31之间的整数，做为date对象的天数
+      hours - 0(午夜24点)-23之间的整数，做为date对象的小时数
+      minutes - 0-59之间的整数，做为date对象的分钟数
+      seconds - 0-59之间的整数，做为date对象的秒数
+      microseconds - 0-999之间的整数，做为date对象的毫秒数 */
+      var t1 = Date.UTC(2020, 0o2, 10, 0o0, 0o0, 0o0); //北京时间2020-02-10 00:00:00
+      var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond);
+      var diff = t2 - t1;
+      var diffYears = Math.floor(diff / years);
+      var diffDays = Math.floor((diff / days) - diffYears * 365);
+      var diffHours = Math.floor((diff - (diffYears * 365 + diffDays) * days) / hours);
+      var diffMinutes = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours) / minutes);
+      var diffSeconds = Math.floor((diff - (diffYears * 365 + diffDays) * days - diffHours * hours - diffMinutes * minutes) / seconds);
+      document.getElementById("sitetime").innerHTML = " 本网站已运行 " + diffYears + " 年 " + diffDays + " 天 " + diffHours + " 小时 " + diffMinutes + " 分钟 " + diffSeconds + " 秒 ";
+      <span id="sitetime"></span>
+    }
+    siteTime();
+  </script>-->
+
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script><!--搜索-->
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script><!--表情插件库-->
+  <!-- mouse click -->
+  <script src="//cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script><!--live2d模型-->
+  <!--代码块复制插件-->
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <!--分页插件-->
+  <script src="//unpkg.com/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  <!-- 访问量统计 -->
+  <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  <!-- 提示 -->
+  <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
+
+
 </body>
 </html>
