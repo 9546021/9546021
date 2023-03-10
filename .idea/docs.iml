@@ -21,5 +21,7 @@
     <orderEntry type="library" name="buble" level="application" />
     <orderEntry type="library" name="busuanzi.pure.mini" level="application" />
     <orderEntry type="library" name="docsify-plugin-flexible-alerts" level="application" />
+    <orderEntry type="library" name="countable" level="application" />
+    <orderEntry type="library" name="docsify-toc" level="application" />
   </component>
 </module>

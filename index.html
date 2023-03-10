@@ -15,20 +15,46 @@
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-defaults.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css"> -->
   <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css"> -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify-toc@1.0.0/dist/toc.css">
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">很快，等一下~</div>
   <script>
     let auto;
     window.$docsify = {
       "name": '河南美食',//标题
+      "logo":'img/logo.png',
       "repo": '',
       "loadSidebar":true,//增加侧边栏
+      "loadSidebar2":true,
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md'
+      },<!--阻止返回父级侧边栏-->
       "subMaxLevel":3,//侧边栏的层级
       "loadNavbar":true,//加载导航栏
       "auto2top":false,//切换页面后是否快速跳转到顶部
+      count:{
+        countable: true,
+        position: 'top',
+        margin: '10px',
+        float: 'right',
+        fontsize:'0.9em',
+        color:'rgb(90,90,90)',
+        language:'chinese',
+        localization: {
+          words: "",
+          minute: ""
+        },
+        isExpected: true
+      },
+      toc: {
+        scope: '.markdown-section',
+        headings: 'h1,h2, h3,h4,h5,h6,h7',
+        title: '河南美食',
+      },
       "coverpage":true,//封面
-      "coverpage2": ['/', '/zh-cn/'],
+      "coverpage3": ['/', '/zh-cn/'],
+      "coverpage2":['/','materials'],
       'flexible-alerts': {
         style: 'flat'
       },
@@ -70,28 +96,8 @@
           });
         },
       ],
-      "plugins": [
-        /*来必力评论*/
-        function (hook, vm) {
-          // load livere
-          hook.beforeEach(function(content) {
-            var comment = "<div id='lv-container' data-id='city' data-uid='MTAyMC80MzA4MC8xOTYyNg=='></div>\n\n----\n"
-            return content + comment;
-          });
 
-          hook.doneEach(function() {
-            (function(d, s) {
-              var j, e = d.getElementsByTagName(s)[0];
-              if (typeof LivereTower === 'function') { return; }
-              j = d.createElement(s);
-              j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-              j.async = true;
-              e.parentNode.insertBefore(j, e);
-            })(document, 'script');
-          });
-        },
-      ]
-  }
+    }
   </script>
   <script src="https://eqcn.ajz.miesnfu.com/wp-content/plugins/wp-3d-pony/live2dw/lib/L2Dwidget.min.js"></script>
   <script>
@@ -156,11 +162,48 @@
     }
     siteTime();
   </script>-->
+  <script type="text/javascript">
+    var a_idx = 0;
+    jQuery(document).ready(function($) {
+      $("body").click(function(e) {
+        var a = new Array("❤学习","❤奥利给","❤干就完事","❤一giao我里giaogiao");
+        var $i = $("<span></span>").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+                y = e.pageY;
+        $i.css({
+          "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+          "top": y - 20,
+          "left": x,
+          "position": "absolute",
+          "font-weight": "bold",
+          "color": "rgb("+~~(255*Math.random())+","+~~(255*Math.random())+","+~~(255*Math.random())+")"
+        });
+        $("body").append($i);
+        $i.animate({
+                  "top": y - 180,
+                  "opacity": 0
+                },
+                1500,
+                function() {
+                  $i.remove();
+                });
+      });
+    });
+  </script>
+  <style>
+    /** 鼠标样式 开始**/
+    /** 普通指针样式**/ body {cursor: url(https://img.alicdn.com/imgextra/i4/3037771681/TB2LdUrj9tkpuFjy0FhXXXQzFXa_!!3037771681.png), default;}
+    /** 链接指针样式**/ a:hover{cursor:url(https://img.alicdn.com/imgextra/i4/3037771681/TB2paoVj3JlpuFjSspjXXcT.pXa_!!3037771681.png), pointer;}
+    /** 鼠标样式 结束**/
+  </style>
+  <canvas width="1366" height="662" style="position: fixed; left: 0px; top: 0px; z-index: 2147483647; pointer-events: none;"></canvas>
 
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script><!--搜索-->
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/emoji.min.js"></script><!--表情插件库-->
+  <!--<script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>-->
   <!-- mouse click -->
   <script src="//cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/stevenjoezhang/live2d-widget/autoload.js"></script><!--live2d模型-->
@@ -172,7 +215,11 @@
   <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
   <!-- 提示 -->
   <script src="https://unpkg.com/docsify-plugin-flexible-alerts"></script>
-
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+  <!--字数统计-->
+  <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+  <!--目录-->
+  <script src="https://unpkg.com/docsify-toc@1.0.0/dist/toc.js"></script>
 
 </body>
 </html>

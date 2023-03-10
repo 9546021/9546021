@@ -1,18 +1,49 @@
 # 欢迎进入河南美食
 
+<div style="height: 20px;background-color: #00CA79">
+</div>
+
+
 > 这是一个分享河南美食的Wiki网站
 
 ___
 
-![河南烩面](./img/huimian.png)
 
-<div height="306"><img src="./img/huimian.png" alt="河南烩面" width="400" height="306" align="center"></div>
-
-- 此出为图片
-
-<div style="background: aquamarine">
-    <div style="background: #00CA79;width: 200px;height: 100px"></div>
+<div style="background: aquamarine;position: absolute;">
+    <div style="background-color: white;width: 200px;height: 150px;margin: 20px;position: absolute;">
+        <img src="img/huimian.png";width="100%";height="80%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'"><a href="laravel/base/1.%20河南烩面.md">河南烩面</a><br>一道河南回忆美食</div>
+    </div>
+    <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 250px;">
+         <img src="img/hulatang.png";width="100%";height="70%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+    </div>
+    <div style="background-color: white;width: 200px;height: 150px;margin: 20px;position: absolute;left: 500px;">
+        <img src="img/huimian.png";width="100%";height="80%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">河南烩面<br>一道河南回忆美食</div>
+    </div>
+    <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 750px;">
+         <img src="img/hulatang.png";width="100%";height="70%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+    </div>
 </div>
 
-[进入第二个首页](zh-cn/README.md)
 
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
