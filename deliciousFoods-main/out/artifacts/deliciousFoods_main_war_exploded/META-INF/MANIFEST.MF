@@ -1,8 +1,0 @@
-Manifest-Version: 1.0
-Created-By: IntelliJ IDEA
-Built-By: 86157
-Build-Jdk: Oracle OpenJDK version 19.0.1
-Implementation-Version: 1.0-SNAPSHOT
-Implementation-Vendor-Id: com.example
-Main-Class: ${start-class}
-

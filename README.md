@@ -20,43 +20,45 @@ ___
     </div>
     <div style="background-color: white;width: 200px;height: 150px;margin: 20px;position: absolute;left: 500px;">
         <img src="img/灌汤包.png";width="100%";height="80%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">河南烩面<br>一道河南回忆美食</div>
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">灌汤包<br>一道河南回忆美食</div>
     </div>
     <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 750px;">
-         <img src="img/安阳血糕.png";width="100%";height="70%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+         <img src="img/濮阳壮馍.png";width="100%";height="70%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">濮阳壮馍<br>一道河南回忆美食</div>
     </div>
 <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 1000px;">
          <img src="img/烫面角.png";width="100%";height="70%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">烫面角<br>一道河南回忆美食</div>
     </div>
 </div>
 <div style="background: aquamarine;position: absolute; top:425px;">
     <div style="background-color: white;width: 200px;height: 150px;margin: 20px;position: absolute;">
         <img src="img/酸浆面条.png";width="100%";height="80%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'"><a href="laravel/base/1.%20河南烩面.md">河南烩面</a><br>一道河南回忆美食</div>
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">酸浆面条<br>一道河南回忆美食</div>
     </div>
     <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 250px;">
          <img src="img/闹汤驴肉.png";width="100%";height="70%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">怀府闹汤驴肉<br>一道河南回忆美食</div>
     </div>
     <div style="background-color: white;width: 200px;height: 150px;margin: 20px;position: absolute;left: 500px;">
-        <img src="img/灌汤包.png";width="100%";height="80%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">河南烩面<br>一道河南回忆美食</div>
+        <img src="img/鸡蛋灌饼.png";width="100%";height="80%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">鸡蛋灌饼<br>一道河南回忆美食</div>
     </div>
     <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 750px;">
          <img src="img/安阳血糕.png";width="100%";height="70%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">安阳血糕<br>一道河南回忆美食</div>
     </div>
 <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 1000px;">
-         <img src="img/烫面角.png";width="100%";height="70%">
-        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">胡辣汤<br>一道河南回忆美食</div>
+         <img src="img/饸饹面.png";width="100%";height="70%">
+        <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">饸饹面<br>一道河南回忆美食</div>
     </div>
 </div>
 
 
 
 
+<br>
+<br>
 <br>
 <br>
 <br>
