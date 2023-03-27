@@ -29,9 +29,9 @@
       alias:{
         '/.*/_sidebar.md': '/_sidebar.md'
       },<!--阻止返回父级侧边栏-->
-      "subMaxLevel":3,//侧边栏的层级
+      "subMaxLevel":6,//侧边栏的层级
       "loadNavbar":true,//加载导航栏
-      "auto2top":false,//切换页面后是否快速跳转到顶部
+      "auto2top":true,//切换页面后是否快速跳转到顶部
       count:{
         countable: true,
         position: 'top',
@@ -52,8 +52,6 @@
         title: '河南美食',
       },
       "coverpage":true,//封面
-      "coverpage3": ['/', '/zh-cn/'],
-      "coverpage2":['/','materials'],
       'flexible-alerts': {
         style: 'flat'
       },
@@ -103,7 +101,6 @@
     L2Dwidget.init({
       "model": {
         //jsonpath控制显示那个小萝莉模型，
-        //(切换模型需要改动)
         jsonPath: "https://unpkg.com/live2d-widget-model-koharu@1.0.5/assets/koharu.model.json",
         "scale": 1
       },
