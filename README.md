@@ -48,7 +48,7 @@ ___
          <img src="img/安阳血糕.png";width="100%";height="70%">
         <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">安阳血糕<br>一道河南回忆美食</div>
     </div>
-<div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 1000px;">
+    <div style="background: white;width: 200px;height: 150px;margin:20px;position: absolute;left: 1000px;">
          <img src="img/饸饹面.png";width="100%";height="70%">
         <div style="font-size:15px;text-align: center;font-family: 'Bookman Old Style'">饸饹面<br>一道河南回忆美食</div>
     </div>
